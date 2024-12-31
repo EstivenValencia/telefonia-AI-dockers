@@ -1,0 +1,26 @@
+syntax = "proto3"; 
+package grpc_service; 
+import "google/protobuf/wrappers.proto"; 
+
+service TelefoniaService { 
+	rpc prediction(ClientData) 
+		returns (PredictionResponse) {} 
+} 
+
+message ClientData 
+{ 
+  int32 internet_service = 1;
+  int32 number_dependents = 2;
+  int32 number_referrals = 3;
+  int32 satisfaction_score = 4;
+  int32 tenure_in_months = 5;
+  float total_long_distance_charges = 6;
+  float total_revenue = 7;
+  string contract = 8;
+  string payment_method = 9;
+}
+
+message PredictionResponse
+{
+    string pred = 1;
+}
