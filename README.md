@@ -1,4 +1,4 @@
-# Sistema de Predicción de Abandono de Clientes de Telefónica utilizando Dockers
+# Sistema de Predicción de Abandono de Clientes de Telefónica utilizando contenedores de Docker
 
 Este proyecto implementa un sistema de predicción que utiliza un modelo de randomforest para predecir si un cliente de Telefónica abandonará el servicio o no. El sistema ofrece múltiples interfaces de comunicación, incluyendo REST, Kafka y gRPC.
 
